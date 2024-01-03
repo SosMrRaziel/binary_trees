@@ -1,7 +1,12 @@
 #include "binary_trees.h"
-
-
-
+/**
+ * function_name - Short description, single line
+ * @parameterx: Description of parameter x
+ *
+ * Description: Longer description of the function (optional)
+ *
+ * Return: Description of the returned value
+ */
 
 size_t binary_tree_height(const binary_tree_t *tree)
 {
