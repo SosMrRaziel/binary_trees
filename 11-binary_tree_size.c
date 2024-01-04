@@ -13,13 +13,14 @@
 
 size_t binary_tree_size(const binary_tree_t *tree)
 {
+	size_t left_size, right_size;
 	/* If the tree is NULL, return 0 */
 	if (tree == NULL)
 		return (0);
 
 	/* Otherwise, recursively find the size of the left and right subtrees */
-	size_t left_size = binary_tree_size(tree->left);
-	size_t right_size = binary_tree_size(tree->right);
+	left_size = binary_tree_size(tree->left);
+	right_size = binary_tree_size(tree->right);
 
 	/* Return the sum of the sizes of the subtrees, */
 	/* plus one for the current node */
